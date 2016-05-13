@@ -34,20 +34,30 @@
           }
           div.bordercurve {
             border: 2px solid;
-            padding: 10px;
-            border-top-left-radius: 2em;
-            border-bottom-right-radius: 2em;
+            padding: 20px;
+            border-top-left-radius: 3em;
+            border-bottom-right-radius: 3em;
           }
           label {
-            padding: 8px;
-            padding-left: 5px;
-            padding-right: 5px;
+            letter-spacing: 2px;
+            padding: 4px;
+            padding-left: 20px;
+            padding-right: 20px;
             background: #000000;
             color: #ffffff;
-            border-top-left-radius: .5em;
-            border-top-right-radius: .5em;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+          }
+          h1 {
+            font-size: 50px;
+          }
+          .longunderline {
+            height: 30px;
+            text-align: bottom;
+            border-bottom: 2px solid #000000;
           }
           .name {
+            letter-spacing: 2px;
             font-family: eurof;
           }
           .doubleline {
@@ -70,62 +80,90 @@
           }
           table.education tr td {
             width: 50%;
+            padding-right: 10px;
+          }
+          table.job tr td {
+            width: 33%;
+          }
+          table.job tr td:not(:first-child) {
+            text-align: right;
           }
           .skills {
             font-size: 10pt;
             vertical-align: top;
           }
+          .gpa {
+            text-align: right;
+          }
           th {
             text-align: center;
             align-items: center;
+          }
+          span.exp-company {
+            font-size: 20px;
           }
         </style>
     </head>
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <div class="gradient bordercurve">
-        <h1 class="name"><b>T</b>revor <b>M</b>illner</h2>
-
-        <p class="doubleline"></p>
-        <table>
+        <table id="contact">
         <tbody>
           <tr>
-          <td>2046 Franklin Ave E.</td><td><b>Github:</b>  tmillner</td>
-          </tr>
-          <tr>
-          <td>Seattle Washington, 98104</td><td><b>Email:</b>  trevormillner@yahoo.com</td></tr>
-          </tr>
-          <tr>
-          <td>206-380-4856</td><td><b>LinkedIn:</b>  trevor-millner-02073957</td> 
+            <td style="width: 60%;"><h1 class="name"><b>T</b>revor <b>M</b>illner</h1></td>
+            <td><table>
+              <tbody>
+                <tr>
+                <td><b>Github:</b>  tmillner</td>
+                </tr>
+                <tr>
+                <td><b>Email:</b>  trevormillner@yahoo.com</td></tr>
+                </tr>
+                <tr>
+                <td><b>LinkedIn:</b>  trevor-millner-02073957</td> 
+                </tr>
+                <tr>
+                <td>
+                2046 Franklin Ave E., Apt #9, Seattle WA, 98104
+                </td></tr>
+              </tbody>
+            </table></td>
           </tr>
         </tbody>
         </table>
+
+        <p class="longunderline"><label>Objectives</label></p>
+        <div>Further knowledge in the Software Engineering field through direct application of planning, testing, and developing.</div>
         <br />
 
-
-        <label>Objectives</label>
-        <div>Further knowledge in Software Engineering through direct application of planning, testing, and developing.</div>
-        <br />
-
-
-        <label>Education</label>
+        <p class="longunderline"><label>Education</label></p>
         <div>
         <table class="education">
         <tbody>
           <tr>
           <td>
-            <b>UNC-GREENSBORO, Greensboro NC</b>
-            <p>2010 - 2012</p>
-            <p><i>Bachelors of Science in Information Systems and Operations Management</i></p>
-            <p class="dottedline"></p>
-            <p>GPA 3.73 / 4.00</p>
+            <table id="education-1">
+              <tbody >
+                <tr><td><b>UNC-GREENSBORO, Greensboro NC</b></td></tr>
+                <tr><td>2010 - 2012</td></tr>
+                <tr><td><p></p></td></tr>
+                <tr><td style="height: 50px"><i>Bachelors of Science in Information Systems and Operations Management</i></td></tr>
+                <tr><td><p class="dottedline"></p></td>
+                <tr><td class="gpa">GPA 3.73 / 4.00</td></tr>
+              </tbody>
+            </table>
           </td>
           <td>
-            <b>GTCC, Jamestown NC</b>
-            <p>2008 - 2010</p>
-            <p><i>Associates in General Education (credit transfer)</i></p>
-            <p class="dottedline"></p>
-            <p>GPA 3.87 / 4.00</p>
+            <table id="education-2">
+                <tbody>
+                  <tr><td><b>GTCC, Jamestown NC</b></td></tr>
+                  <tr><td>2008 - 2010</td></tr>
+                  <tr><td><p></p></td></tr>
+                  <tr><td style="height: 50px"><i>Associates in General Education (credit transfer)</i></td></tr>
+                  <tr><td><p class="dottedline"></p></td>
+                  <tr><td class="gpa">GPA 3.87 / 4.00</td></tr>
+                </tbody>
+              </table>
           </td>
           </tr>
         </tbody>
@@ -133,7 +171,7 @@
         </div>
 
 
-        <label>Skills</label>
+        <p class="longunderline"><label>Skills</label></p>
         <table>
           <thead class="header">
             <tr>
@@ -176,15 +214,20 @@
         <br />
 
 
-        <label>Experience</label>
+        <p class="longunderline"><label>Experience</label></p>
         <div id="experience">
           <div>
-          <h4>PaperG,</h4><i>Bellevue, WA</i><br />
-          <b>Software QA Tester</b> (Dec/2013 - Feb/2016)<br />
+          <table class="job">
+          <tbody>
+            <td><span class="exp-company">PaperG, </span><i>Bellevue, WA</i></td>
+            <td><b>Software QA Tester</b></td>
+            <td>Dec/2013 - Feb/2016</td>
+          </tbody>
+          </table>
           <ul>
             <li>Perform cross platform and browser manual testing on web application</li>
             <li>Automate regressions and critical production issues -- at both API and UI levels</li>
-            <li>Log thourough bugs into JIRA, while also triaging and assigning items to developer</li>
+            <li>Log thourough bugs into JIRA, while also triaging and assigning items to developers</li>
             <li>Fixed and deployed periodic CI hiccups</li>
             <li>Provided generous assistance to developers debuging test failures</li>
             <li>Spanned multiple Projects and teams in giving code reviews (FE, BE, Ops)</li>
@@ -196,10 +239,16 @@
             <li>Deployed a NodeJS solution on AWS for image result comparison across OS and browsers</li>
           </ul>
           </div>
+          <br />
 
           <div>
-          <h4>Sublime Media,</h4><i>Seattle, WA</i><br />
-          <b>Quality Assurance Specialist</b> (Sep/2013 - Dec/2013)<br />
+          <table class="job">
+          <tbody>
+            <td><span class="exp-company">Sublime Media, </span><i>Seattle, WA</i></td>
+            <td><b>Quality Assurance Specialist</b></td>
+            <td>Sep/2013 - Dec/2013</td>
+          </tbody>
+          </table>
           <ul>
             <li>Use manual testing techniques to ensure content and functionality of web projects, as corses, are accurate, logical, and aesthetically appealing from an end users perspective</li>
             <li>Communicate with developers and content editors to facilitate full, unimpeded implementation of courses - working extra hours to help others, thus meeting deadlines</li>
@@ -207,10 +256,16 @@
             <li>Seek and provide new ideas to improve testing efficiency and coverage</li>
           </ul>
           </div>
+          <br />
 
           <div>
-          <h4>Zenergy Technologies,</h4><i>Greensboro, NC</i><br />
-          <b>Jr. Test Automation Engineer</b> (Jul/2012 - Jul/2013)<br />
+          <table class="job">
+          <tbody>
+            <td><span class="exp-company">Zenergy Technologies, </span><i>Greensboro, NC</i></td>
+            <td><b>Jr. Test Automation Engineer</b></td>
+            <td>Jul/2012 - Jul/2013</td>
+          </tbody>
+          </table>
           <ul>
             <li>Interfaced with clients remotely and on-site to expand, execute, and maintain automated framework(s) as requested</li>
             <li>Automated test cases using HP QTP expert view (VBScript) and performed script maintenance</li>
@@ -226,7 +281,6 @@
           </div>
         </div>
         <br />
-
         </div>
     </body>
 </html>
