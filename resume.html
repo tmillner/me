@@ -60,12 +60,16 @@
           }
           div.content {
             border: 1px solid #ffffff;
+            background-color: #ffffff;
           }
           thead.header {
             text-align: center;
             align-items: center;
             color: #ffffff;
             background-color: #000000;
+          }
+          table.education tr td {
+            width: 50%;
           }
           .skills {
             font-size: 10pt;
@@ -106,7 +110,7 @@
 
         <label>Education</label>
         <div>
-        <table>
+        <table class="education">
         <tbody>
           <tr>
           <td>
@@ -148,8 +152,10 @@
                 <li>Grunt, Gulp</li>
                 <li>NodeJS</li>
                 <li>Javascript</li>
+                <li>NoSQL, MongoDB</li>
               </ul></td>
               <td><ul>
+                <li>SQL</li>
                 <li>Java</li>
                 <li>Android</li>
                 <li>Python</li>
@@ -171,18 +177,56 @@
 
 
         <label>Experience</label>
-        <div>
+        <div id="experience">
           <div>
-          <h4>Sublime Media,</h4> <i>Seattle, WA</i><br />
+          <h4>PaperG,</h4><i>Bellevue, WA</i><br />
+          <b>Software QA Tester</b> (Dec/2013 - Feb/2016)<br />
+          <ul>
+            <li>Perform cross platform and browser manual testing on web application</li>
+            <li>Automate regressions and critical production issues -- at both API and UI levels</li>
+            <li>Log thourough bugs into JIRA, while also triaging and assigning items to developer</li>
+            <li>Fixed and deployed periodic CI hiccups</li>
+            <li>Provided generous assistance to developers debuging test failures</li>
+            <li>Spanned multiple Projects and teams in giving code reviews (FE, BE, Ops)</li>
+            <li>Proposed alternative CI frameworks to Strider CD (Jenkins CI)</li>
+            <li>Created Code Coverage dashboard for metric tracking, raising quality awareness concerns</li>
+            <li>Volunteered more test responsibility when resources were diminished or during product release</li>
+            <li>Researched and asked ample questions to stay abreast new and experimental project trends</li> 
+            <li>Debugged and Monitored tracking data pipeline via console, AWS, and Stackdriver</li>
+            <li>Deployed a NodeJS solution on AWS for image result comparison across OS and browsers</li>
+          </ul>
+          </div>
+
+          <div>
+          <h4>Sublime Media,</h4><i>Seattle, WA</i><br />
           <b>Quality Assurance Specialist</b> (Sep/2013 - Dec/2013)<br />
           <ul>
-            <li></li>
+            <li>Use manual testing techniques to ensure content and functionality of web projects, as corses, are accurate, logical, and aesthetically appealing from an end users perspective</li>
+            <li>Communicate with developers and content editors to facilitate full, unimpeded implementation of courses - working extra hours to help others, thus meeting deadlines</li>
+            <li>Log bugs/issues using bug tracking tool DoneDone</li>
+            <li>Seek and provide new ideas to improve testing efficiency and coverage</li>
+          </ul>
+          </div>
+
+          <div>
+          <h4>Zenergy Technologies,</h4><i>Greensboro, NC</i><br />
+          <b>Jr. Test Automation Engineer</b> (Jul/2012 - Jul/2013)<br />
+          <ul>
+            <li>Interfaced with clients remotely and on-site to expand, execute, and maintain automated framework(s) as requested</li>
+            <li>Automated test cases using HP QTP expert view (VBScript) and performed script maintenance</li>
+            <li>Designed reusable automated test cases using modular, keyword and hybrid frameworks</li>
+            <li>Provided feedback on how to improve functional test cases Expected and Actual result</li>
+            <li>Scheduled test execution in HP QC/ALM to run suite of tests</li>
+            <li>Performed research duties to reommend, uphold and validate business decisions in tools and technologies to invest into</li>
+            <li>Tested mobile devices (Blackberry, iPhone, and Android), logging bugs in JIRA</li>
+            <li>Implemented structured web automation using Selenium Webdriver via Java and Python</li>
+            <li>Carried out tailored training to non-technical staff for using HP QTP and utilizing hybrid frameworks</li>
+            <li>Conducted phone and in-person interviews for candidates applying in manual and automated QA roles</li>
           </ul>
           </div>
         </div>
         <br />
 
         </div>
-        <div>Not in gradient</div>
     </body>
 </html>
