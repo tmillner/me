@@ -14,20 +14,50 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+        <script>
+        $('.smooth').on('click', function() {
+            $.smoothScroll({
+                scrollElement: $('body'),
+                scrollTarget: '#' + this.id
+            });
+            
+            return false;
+        });
+        </script>
+
         <style>
             body {
                 background-image: url("images/wov.png");
                 padding-right: 50px;
                 padding-left: 50px;
                 font-family: Verdana, Geneva;
+                font-size: 16px;
             }
             .navbar {
                 font-size: 16px;
                 line-height: 1.5;
                 font-family: Helvetica, Arial;
             }
+            .navbar-nav li a:hover {
+                background-color: #7a7a52;
+                color: #ddd8d6;
+            }
             a {
                 color: #ddd8d6;
+            }
+            .navbar-nav-footer li a:hover {
+                float:left;
+                background-color:unset;
+            }
+            .navbar-nav-footer li {
+                padding:20px;
+                float:left;
+            }
+            .section {
+                height:600px;
             }
         </style>
     </head>
@@ -46,21 +76,27 @@
         <h3>
         <a href="" class="label label-primary">Home</a>
         <a href="resume-en.html" class="label label-primary">Resume</a></h3>
-        <div> 
-            Hi there, You've parked on Trevor Millner's web page. Here is a bit about myself.
+        <div id="opener" class="section"> 
+            Hi there, You've parked on Trevor Millner's web page. If you want to know, here is a bit about myself.
         </div>
-        <div>
+        <div class="section">
             I've always envisioned a future where tech is fully integrated in our lifestyles and enviornment. Thanks to open source, projects such as Arduino and the low cost of computing, they have allowed me experimentation and a means to fulfill that vision.
         </div>
-        <div>
-
+        <div class="section">
+            Despite the stellar grades I received in college (4 year average of 3.8), entering the workforce has taught me there are more subtle and valuable things to be attained -- namely communication. I've also come to realize adaptability and creativity are far more necessary compared to sheer experience and education.
+        </div>
+        <div class="section">
+            My professional background has been consistently on the automated testing side of things. Selenium, xUnit, HP QTP, SauceLabs, and Jasmine, to name a few. The technologies I've used most often are: Java, Python, and Javascript. My technical goal in progress is to become competent enough to develop full-stack style while employing current best design and architectural patterns. I'm always excited to see the plethora of things and tools being created -- it's great to know challenges are constantly being broken.
+        </div>
+        <div class="section">
+            For spare time I'm usually found reading on my Kindle Paperwhite, outdoors exercising and soaking up the sun, watching Chinese television, programming, meditating, or listening to fast paced music.
         </div>
         <br />
-        <div id="footer-group">
-            <ul>
-            <li>Github</li>
-            <li>LinkedIn</li>
-            <li>Instagram</li>
+        <div id="footer-nav" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav-footer">
+            <li><a href="https://github.com/tmillner"><img src="images/github.png" alt="Github"  /></a></li>
+            <li><a href="https://www.linkedin.com/in/trevor-millner-02073957"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
+            <li><a href="https://www.instagram.com/trevor.millner/"><img src="images/instagram.png" alt="Instagram" /></a></li>
             </ul>
         </div>
     </body>
