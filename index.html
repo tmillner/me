@@ -31,8 +31,7 @@
         <style>
             body {
                 background-image: url("images/wov.png");
-                padding-right: 50px;
-                padding-left: 50px;
+                padding-top: 120px;
                 font-family: Verdana, Geneva;
                 font-size: 16px;
             }
@@ -40,10 +39,18 @@
                 font-size: 16px;
                 line-height: 1.5;
                 font-family: Helvetica, Arial;
+                background-size: 100%;
+            background-repeat:no-repeat;
+            background-image: linear-gradient(to right, #a19d70 0%,#c6c4ac 100%);
+            background-blend-mode: color-dodge;
             }
             .navbar-nav li a:hover {
                 background-color: #7a7a52;
                 color: #ddd8d6;
+            }
+            .navbar-nav li {
+                padding:20px;
+                float:left;
             }
             a {
                 color: #ddd8d6;
@@ -53,17 +60,47 @@
                 background-color:unset;
             }
             .navbar-nav-footer li {
-                padding:20px;
+                margin-right: 30px;
                 float:left;
             }
             .section {
-                height:600px;
+                padding-right: 100px;
+                padding-left: 100px;
+                height:350px;
             }
+            .sectioncontent {
+                padding: 20px;
+                opacity: 0.5;
+                background-color: #c6c4ac;
+            }
+            #zigzagborder {
+                border: 15pt solid transparent;
+                border-image-outset: 15px;
+                background-color: #a19d70;
+                padding: 15px;
+                border-image-source: url(images/zigzag.png);
+                border-image-repeat: round;
+                border-image-slice: 35;
+            }
+        div.bordercurve {
+            border: 7px solid;
+            padding: 20px;
+            border-top-left-radius: 4em;
+            border-top-right-radius: 4em;
+            border-bottom-right-radius: 4em;
+            border-bottom-left-radius: 4em;
+          }
+        div.widebackground1 {
+            background-image: url("images/likes-1.png");
+
+            background-repeat: no-repeat;
+            vertical-align: bottom;
+        }
         </style>
     </head>
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <nav class="navbar navbar navbar-fixed-top" style="background-color: #a19d70">
+        <nav class="navbar navbar-fixed-top" >
             <div class="container">
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -73,30 +110,36 @@
                 </div>
             </div>
         </nav>
-        <h3>
-        <a href="" class="label label-primary">Home</a>
-        <a href="resume-en.html" class="label label-primary">Resume</a></h3>
+        <div>
+        <div class="widebackground1">
         <div id="opener" class="section"> 
-            Hi there, You've parked on Trevor Millner's web page. If you want to know, here is a bit about myself.
+            <br />
+            <p>Hi there! You've parked on Trevor Millner's web page. If you want to know, here is a bit about myself.</p>
+            <div>
+            </div>
         </div>
+        </div>
+
         <div class="section">
-            I've always envisioned a future where tech is fully integrated in our lifestyles and enviornment. Thanks to open source, projects such as Arduino and the low cost of computing, they have allowed me experimentation and a means to fulfill that vision.
+            I've always envisioned a future where tech is fully integrated in our lifestyles and enviornment. Thanks to open source, projects such as Arduino and the low cost of computing, they have allowed me experimentation and a means to engage in that vision.
         </div>
         <div class="section">
             Despite the stellar grades I received in college (4 year average of 3.8), entering the workforce has taught me there are more subtle and valuable things to be attained -- namely communication. I've also come to realize adaptability and creativity are far more necessary compared to sheer experience and education.
         </div>
         <div class="section">
-            My professional background has been consistently on the automated testing side of things. Selenium, xUnit, HP QTP, SauceLabs, and Jasmine, to name a few. The technologies I've used most often are: Java, Python, and Javascript. My technical goal in progress is to become competent enough to develop full-stack style while employing current best design and architectural patterns. I'm always excited to see the plethora of things and tools being created -- it's great to know challenges are constantly being broken.
+            My professional background has been consistently on the automated testing side of things. Selenium, xUnit, HP QTP, SauceLabs, and Jasmine, to name a few. The technologies I've use most commonly are Java, Python, and Javascript. My technical goal in progress is to become competent enough to develop full-stack style while employing current best design and architectural patterns. I'm always excited to see the plethora of things and tools being created -- it's great to know challenges are constantly being broken.
         </div>
         <div class="section">
-            For spare time I'm usually found reading on my Kindle Paperwhite, outdoors exercising and soaking up the sun, watching Chinese television, programming, meditating, or listening to fast paced music.
+            For spare time I'm usually found reading on my Kindle Paperwhite, exercising, outdoors soaking up the sun, watching Chinese television, programming, meditating, or listening to fast paced music.
         </div>
         <br />
         <div id="footer-nav" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav-footer">
+             <!-- Make this fixed to bottom ? -->
+            <ul class="nav navbar-nav-footer" >
             <li><a href="https://github.com/tmillner"><img src="images/github.png" alt="Github"  /></a></li>
             <li><a href="https://www.linkedin.com/in/trevor-millner-02073957"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
             <li><a href="https://www.instagram.com/trevor.millner/"><img src="images/instagram.png" alt="Instagram" /></a></li>
+            <li><img width="64" height="64" src="images/me2.png" /></li>
             </ul>
         </div>
     </body>
