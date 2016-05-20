@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html lang="en" class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | tmillner</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+        <script>
+        $('.smooth').on('click', function() {
+            $.smoothScroll({
+                scrollElement: $('body'),
+                scrollTarget: '#' + this.id
+            });
+            
+            return false;
+        });
+        </script>
+
+        <style>
+            body {
+                background-image: url("images/wov.png");
+                padding-top: 120px;
+                font-family: Verdana, Geneva;
+                font-size: 16px;
+            }
+            .navbar {
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: Helvetica, Arial;
+                background-color: #a19d70;
+            }
+            .navbar-nav li a:hover {
+                background-color: #7a7a52;
+                color: #ddd8d6;
+            }
+            .navbar-nav li {
+                padding: 10px;
+                float:left;
+            }
+            a {
+                color: #ddd8d6;
+            }
+            .navbar-nav-footer li a:hover {
+                float:left;
+                background-color:unset;
+            }
+            .navbar-nav-footer li {
+                margin-right: 30px;
+                float:left;
+            }
+            .section {
+                padding-right: 100px;
+                line-height: 30px;
+                padding-left: 100px;
+                padding-bottom: 30px;
+                font-family: monospace;
+            }
+            .sectioncontent {
+                padding: 25px;
+                color: #000000;
+                opacity: 0.5;
+                background-color: #c6c4ac;
+                border-bottom-right-radius: 4em;
+                border-top-right-radius: 4em;
+            }
+            #zigzagborder {
+                border: 15pt solid transparent;
+                border-image-outset: 15px;
+                background-color: #a19d70;
+                padding: 15px;
+                border-image-source: url(images/zigzag.png);
+                border-image-repeat: round;
+                border-image-slice: 35;
+            }
+        div.bordercurve {
+            padding: 20px;
+            border-bottom-right-radius: 4em;
+            border-bottom-left-radius: 4em;
+          }
+        div.widebackground1 {
+            background-image: url("images/likes-1.png");
+            background-repeat: no-repeat;
+            vertical-align: bottom;
+        }
+        .cozytable tr td{
+            padding: 30px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <nav class="navbar navbar-fixed-top" >
+            <div class="container">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="resume-en.html">Resume</a></li>
+                        <li><a href="#links">What I'm Up To</a></li>
+                        <li><h1></h1></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="opener" class="section"> 
+            <br />
+            <p class="sectioncontent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hi, you've parked on Trevor Millner's web page. If you want to know, here is a bit about myself.</p>
+        </div>
+
+        <div class="section">
+            <table class="cozytable">
+            <tbody>
+                <tr>
+                    <td><img src="images/tea.png" alt="tea"/></td>
+                    <td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Despite the stellar grades I received in college (4 year average of 3.8), entering the workforce has taught me there are still yet subtle and valuable traits required for success -- namely communication. I've also come to realize adaptability and creativity are far more necessary compared to sheer experience and education.</p></td>
+                </tr>
+            </tbody>
+            </table>     
+        </div>
+
+        <div class="section">
+            <p class="sectioncontent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My professional background has been consistently on the automated testing side of things. Selenium, xUnit, HP QTP, SauceLabs, and Jasmine, to name a few. The languages I use most commonly are Java, Python, and Javascript. My technical goal in progress is to become competent enough to develop full-stack while employing best design and architectural practices. I'm always excited to see the plethora of projects and tools being created -- it's great to know challenges are constantly being broken.
+        </p>
+        </div>
+
+        <div class="section">
+        <table class="cozytable">
+            <tbody>
+                <tr>
+                    <td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For spare time I'm usually found reading on a Kindle Paperwhite, exercising, outside soaking up the sun, watching Chinese broadcasts, programming, meditating, or listening to fast paced music.</p></td>
+                    <td><img src="images/tool.png" alt="tools (wrench screwdriver)"/></td>
+                </tr>
+            </tbody>
+            </table> 
+        </div>
+        <div id="footer-nav" class="navbar-collapse collapse">
+             <!-- Make this fixed to bottom ? -->
+            <ul class="nav navbar-nav-footer" >
+             <a name="links"></a>
+            <li><a href="https://github.com/tmillner"><img src="images/github.png" alt="Github"  /></a></li>
+            <li><a href="https://www.linkedin.com/in/trevor-millner-02073957"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
+            <li><a href="https://www.instagram.com/trevor.millner/"><img src="images/instagram.png" alt="Instagram" /></a></li>
+            <li><b>™</b></li>
+            </ul>
+        </div>
+    </body>
+</html>
