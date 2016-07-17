@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . /usr/src/me
 EXPOSE 3123
-CMD [ "npm", "start"]
+CMD [ "/bin/sh", "-c", "npm start > applog.log"]
